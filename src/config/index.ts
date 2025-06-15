@@ -3,7 +3,7 @@ import 'dotenv/config';
 export const NODE_ENV = process.env.NODE_ENV;
 export const baseUrl = process.env.BASE_URL;
 export const frontendUrl = process.env.FRONTEND_URL;
-export const port = process.env.PORT;
+export const port = process.env.PORT || 10000;
 // for Database Connection
 export const mongoUrl: string = process.env.mongoDB_URI || '';
 export const redisUrl: string = process.env.REDIS_URI || '';
